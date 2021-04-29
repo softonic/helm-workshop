@@ -1,6 +1,6 @@
 # Helm dependencies:
 
-## Gueting started
+## Getting started
 
 ```sh
 git clone git@github.com:softonic/helm-workshop.git
