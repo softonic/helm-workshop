@@ -15,13 +15,22 @@ ctlptl apply -f "https://ctlptl.softonic.io/kind.yaml"
 
 # Add first subchart
 
-In `Chart.yaml` add:
+Search for redis official helm package. You can search for using:
+```
+helm search repo <package>
+```
+or
+```
+helm search hub --endpoint=... <package>
+```
+
+Now, in `Chart.yaml` add:
 
 ```yaml
 dependencies:
-  - name: redis
-    version: 14.1.0
-    repository: https://charts.bitnami.com/bitnami
+  - name: <chart-name>
+    version: <chart-version>
+    repository: <repo-url>
 ```
 
 And then install the dependencies
@@ -39,7 +48,7 @@ In `Chart.yaml` add:
   - name: redis
     version: 14.1.0
     repository: https://charts.bitnami.com/bitnami
-    alias: redis-alias
+    alias: redis-v2
 ```
 
 And then install the dependencies
@@ -107,12 +116,12 @@ dependencies:
   - name: redis
     version: 14.1.0
     repository: https://charts.bitnami.com/bitnami
-    condition: redis.enabled, not redis-alias.enabled
+    condition: redis.enabled, not redis-v2.enabled
   - name: redis
     version: 14.1.0
     repository: https://charts.bitnami.com/bitnami
-    alias: redis-alias
-    condition: redis-alias.enabled
+    alias: redis-v2
+    condition: redis-v2.enabled
 
 # values.yaml
 redis-alias: 
@@ -123,13 +132,17 @@ redis:
 
 # Development flow
 
+## Helm git repository
+
+``` 
+~/your-repositories-folder $ git clone git@bitbucket.org:softonic-development/helm-laravel.git
+```
+
 Include subchart locally:
 
 ```yaml
 dependencies:
-  - name: redis
-    version: 14.1.0
-    repository: "file://temp/redis"
+  - name: laravel
+    version: 9.5.0
+    repository: "file://~/your-repositories-folder/helm-laravel"
 ```
-
-And extract subchart to the temp folder.
