@@ -1,5 +1,5 @@
 # Introduction
-The final Boss tells you to use your recently learned helm skills in the real world example.
+The final Boss tells you to use your recently learned helm skills in the real world example which is the helm-workshop chart in the root of the repo.
 
 ## Issue 1
 Use the values.yaml to templatize the container port (containerPort).
