@@ -2,7 +2,7 @@
 Use helm template command to fix the following issues:
 
 ```
-helm template 00-exercises/05-named-template
+helm template 02-exercises/05-named-template
 ```
 
 ## Issue 1

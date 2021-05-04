@@ -2,7 +2,7 @@
 Use helm template command to fix the following issues:
 
 ```
-helm template 00-exercises/01-values
+helm template 02-exercises/01-values
 ```
 
 ## Issue 1

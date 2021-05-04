@@ -2,7 +2,7 @@
 Use helm template command to fix the following issues:
 
 ```
-helm template 00-exercises/03-built-in-objects
+helm template 02-exercises/03-built-in-objects
 ```
 
 ## Issue 1

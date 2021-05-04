@@ -2,7 +2,7 @@
 Use helm template command to fix the following issues:
 
 ```
-helm template 00-exercises/04-scope-with-with
+helm template 02-exercises/04-scope-with-with
 ```
 
 ## Issue 1

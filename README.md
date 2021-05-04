@@ -1,8 +1,13 @@
 # helm-workshop
 Helm workshop
 
+## CHAPTER 1. What is helm
+In this section we will learn the `helm` basics, and we will create our first chart.
+Exercises are described in the slides.
+After completing the exercises, you should have a chart such as the one in the `helm-workshop` folder.
+
 ## CHAPTER 2. Helm Charts
-For these exercises, please open the `00-exercises` folder and refer to the `README.md` of each exercise.
+For these exercises, please open the `02-exercises` folder and refer to the `README.md` of each exercise.
 
 Each exercise consists in two folders, one for the initial state and one with the solution. Try and perform the needed changes without consulting the solution.
 
@@ -10,7 +15,7 @@ In order to test your changes, you can check the contents of the generated manif
 
 
 ```
-helm template 00-exercises/02-specificity
+helm template 02-exercises/02-specificity
 ```
 
 The last exercise (*06-final-boss*) begins with the chart generated in the previous chapter of the workshop (present in the `helm-workshop` folder at the root of the project).
@@ -26,3 +31,10 @@ helm upgrade --install helm-workshop helm-workshop -f helm-workshop/values.overw
 # To force using only the original file
 helm upgrade --install helm-workshop helm-workshop -f helm-workshop/values.yaml
 ```
+
+Please note that you don't need to finish all the exercises in order to continue to the next chapter. You can simply use the `helm-workshop` chart as a reference.
+
+## CHAPTER 3. Secrets
+TODO
+## CHAPTER 4. Packages
+TODO
