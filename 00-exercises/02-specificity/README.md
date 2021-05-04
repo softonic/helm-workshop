@@ -6,7 +6,7 @@ helm template 00-exercises/02-specificity
 ```
 
 ## Issue 1
-Create a new values file to override application name with `mycustomhpa`.
+Create a new values file to override hpa metadata name with `mycustomhpa`.
 
 *HINT:* Check helm syntax and use `-f` option.
 

@@ -6,7 +6,7 @@ helm template 00-exercises/02-specificity
 ```
 
 ## Issue 1
-Create a new values file to override application name with `mycustomhpa`.
+Create a new values file to override hpa metadata name with `mycustomhpa`.
 
 *SOLUTION:* `helm template -f 00-exercises/02-specificity-solution/values.custom.yaml 00-exercises/02-specificity-solution`
 
