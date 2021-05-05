@@ -1,5 +1,21 @@
 # Helm dependencies:
 
+Services:
+  * https://artifacthub.io/
+
+Commands:
+  * helm repo list 
+  * helm search hub redis
+  * helm repo list
+  * helm search repo redis
+  * helm repo add bitnami https://charts.bitnami.com/bitnami
+
+## Gueting started
+
+```sh
+kind create cluster --name helm-workshop --config kind.conf.yaml
+```
+
 ## Getting started
 
 # Add first subchart
