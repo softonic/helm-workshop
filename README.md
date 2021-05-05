@@ -34,7 +34,12 @@ helm upgrade --install helm-workshop helm-workshop -f helm-workshop/values.yaml
 
 Please note that you don't need to finish all the exercises in order to continue to the next chapter. You can simply use the `helm-workshop` chart as a reference.
 
-## CHAPTER 3. Secrets
-TODO
+## CHAPTER 3. Helm Secrets
+Here we'll understand how `helm secrets` works. Which are the tools used underneath, and how to use them with a local pgp key.
+
+Please open the `03-exercises` folder. You'll find the same exercise we were working in the Helm Charts exercise and some instructions in the `README.md` file.
+
+Note: The execution of this exercise is not a requirement for exercise in Chapter 4.
+
 ## CHAPTER 4. Packages
 TODO
