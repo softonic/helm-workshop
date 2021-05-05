@@ -2,17 +2,6 @@
 
 ## Gueting started
 
-```sh
-git clone git@github.com:softonic/helm-workshop.git
-git checkout helm-dependencies
-```
-
-Install kind and up kubernetes in locale:
-
-```sh
-ctlptl apply -f "https://ctlptl.softonic.io/kind.yaml"
-```
-
 # Add first subchart
 
 In `Chart.yaml` add:
