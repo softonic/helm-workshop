@@ -1,2 +1,2 @@
 creation_rules:
-  - gcp_kms: ''
+  - pgp: '5BA0FA68EC37A3128D7894F9FE8077CD92C74035'
